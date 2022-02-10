@@ -1,0 +1,95 @@
+/* Styling for HTML elements */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #efeee7; 
+    background-image: url("NeuralNet.jpg"); 
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    background-size: cover;  /* Resize the background image to cover the entire container */ */
+
+  }
+
+
+  header {
+    background: #333;
+  }
+  
+
+
+  h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(239, 241, 245);
+    text-align: left;
+  }
+  
+
+  h2 {
+    padding: 30px 0;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(239, 241, 245);
+    text-align: left;
+  }
+
+  h3 {
+    padding: 18px 0;
+    margin: 0;
+    margin-bottom: 0px;
+    text-decoration: ;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(245, 246, 248);
+    text-align: left;
+  }
+
+  h4 {
+    padding: 10px 0;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(16, 10, 10);
+    text-align: left;
+  }
+
+  h5 {
+    padding: 10px 0px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(29, 12, 122);
+    text-align: left;
+  }
+
+  h6 {
+    padding: 0px 0;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(230, 42, 42);
+    text-align: left;
+  }
+
+  em {
+    padding: 10px 0px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(251, 251, 253);
+    text-align: left;
+  }
+  
