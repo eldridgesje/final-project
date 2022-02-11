@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    <div class="container-fluid"><br>
+      <div class="navbar-nav me-auto">
+        <a class="nav-link" href="index.html"><strong><h6>OCEAN
+        </h6></strong></a>
+      </div>
+      <ul class="navbar-nav ms-auto">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="methodology.html">Methodology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demographics.html">Demographics</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cluster Analysis 
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="personality_cluster_1.html">Personality Cluster 1</a></li>
+              <li><a class="dropdown-item" href="personality_cluster_2.html">Personality Cluster 2</a></li>
+              <li><a class="dropdown-item" href="personality_cluster_3.html">Personality Cluster 3</a></li>
+              <li><a class="dropdown-item" href="personality_cluster_4.html">Personality Cluster 4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Analysis of Big 5 Personality Test </h1>
+    <hr class="my-4">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8" style="background-color:rgba(139, 156, 233, 0.85)" ;>
+        <div class="w3-container">
+          <p><h2>Given a dataset of Five-Factor personality test responses, what clusters can be found among respondents?</h2></p>
+          <p><br><img src="Resources/assets/images/Fig1.png" alt="Weather_plot1" class="img-fluid"
+              style="width:275px;height:275px; margin-right:15px; float: left">Loto paulo graece no, eu pro complectitur concludaturque. Eos facete dolorum legimus no, nulla persius intellegebat ea
+              mel. Quodsi intellegam ei per, id gubergren consectetuer has.
+              <br><br>Lorem ipsum dolor sit amet, sint torquatos sea ex. Ea mea veri solum ponderum, qui homero insolens ex. Vix mundi
+              quaerendum dissentiet ea, ei vel feugiat complectitur, sed ei civibus ponderum evertitur. Ad nibh sensibus vel. Pri no
+              audiam vituperatoribus.
+              
+              In cum unum bro singulis quo, an illum commune eum. Harum sanctus reformidans te nam, id his veri oblique perpetua. In
+              purto mutat minim sed. Ius choro prompta ne, ius ea quod minimum consetetur. Usu in officiis comprehensam, ei per mutat
+              putent cetero.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4" style="background-color:rgb(139, 156, 233, 0.855)" ;>
+
+        <div class="row">
+          <div class="col-md-6" style="background-color:rgb(139, 156, 233, 0.1)" ;>
+            <h2>Visualizations</h2>
+            <div class="thumbnail">
+              <article>
+                <a target="_blank" href="personality_cluster_1.html">
+                  <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Map" class="img-thumbnail">
+                </a>
+                <p><em>Personality Cluster 1</em></p>
+              </article>
+            </div>
+          </div>
+          <div class="col-md-6" style="background-color:rgb(139, 156, 233, 0.1)" ;>
+            <h2><br> </h2>
+            <div class="thumbnail">
+              <article>
+                <a target="_blank" href="personality_cluster_2.html">
+                  <img src="Resources/assets/images/Fig2.png" alt="Humidity Map" class="img-thumbnail">
+                </a>
+                <p><em>Personality Cluster 2</em></p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" style="background-color:rgb(139, 156, 233, 0.1)" ;>
+            <div class="thumbnail">
+              <hr>
+              <article>
+                <a target="_blank" href="personality_cluster_3.html">
+                  <img src="Resources/assets/images/Fig3.png" alt="Cloudy Map" class="img-thumbnail">
+                </a>
+                <p><em>Personality Cluster 3</em></p>
+              </article>
+            </div>
+          </div>
+          <div class="col-md-6" style="background-color:rgb(139, 156, 233, 0.1)" ;>
+            <div class="thumbnail">
+              <hr>
+              <article>
+                <a target="_blank" href="personality_cluster_4.html">
+                  <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Map" class="img-thumbnail">
+                </a>
+                <p><em>Personality Cluster 4</em></p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
