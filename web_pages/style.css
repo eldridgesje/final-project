@@ -7,7 +7,7 @@ body {
     line-height: 150%;
     color: #333;
     background: #efeee7; 
-    background-image: url("NeuralNet.jpg"); 
+    background-image: url("Resources/assets/images/NeuralNet.jpg"); 
     background-repeat: no-repeat, repeat;
     background-color: #cccccc;
     background-size: cover;  /* Resize the background image to cover the entire container */ */
@@ -27,29 +27,29 @@ body {
     margin-bottom: 10px;
     font-size: 40px;
     font-weight: 700;
-    color: rgb(239, 241, 245);
+    color: rgb(216, 6, 6);
     text-align: left;
   }
   
 
   h2 {
-    padding: 30px 0;
+    padding: 10px 0;
     margin: 0;
-    margin-bottom: 0px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 28px;
     font-weight: bold;
-    color: rgb(239, 241, 245);
+    color: rgb(15, 145, 206);
     text-align: left;
   }
 
   h3 {
-    padding: 18px 0;
+    padding: 5px 0;
     margin: 0;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     text-decoration: ;
-    font-size: 18px;
-    font-weight: normal;
-    color: rgb(245, 246, 248);
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(237, 240, 235);
     text-align: left;
   }
 
@@ -57,19 +57,19 @@ body {
     padding: 10px 0;
     margin: 0;
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
-    color: rgb(16, 10, 10);
+    color: rgb(245, 248, 248);
     text-align: left;
   }
 
   h5 {
-    padding: 10px 0px;
+    padding: 1px 0px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(29, 12, 122);
+    color: rgb(19, 5, 100);
     text-align: left;
   }
 
@@ -92,4 +92,65 @@ body {
     color: rgb(251, 251, 253);
     text-align: left;
   }
+
+
+
+Two Column Flex Layout
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-child {
+    flex: 1;
+    flex-wrap: wrap;
+    border: 2px solid rgba(12, 12, 11, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}  
+
+.flex-child:first-child {
+    flex-wrap: wrap;
+    margin-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+} 
   
+
+
+/* Four Flexbox Layout */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  background-color: rgba(94, 103, 119, 0.863);
+}
+
+.background-color {
+  background-color: rgb(98, 115, 155);
+  height: 100px;
+}
+
+.blue-column {
+  background-color: rgb(115, 115, 221);
+  height: 100px;
+}
+
+.green-column {
+  background-color: green;
+  height: 100px;
+}
+
+
