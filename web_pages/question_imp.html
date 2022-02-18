@@ -14,8 +14,10 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
     <div class="container-fluid"><br>
       <div class="navbar-nav me-auto">
-        <a class="nav-link" href="index.html"><strong><h6>OCEAN
-        </h6></strong></a>
+        <a class="nav-link" href="index.html"><strong>
+          <h6>OCEAN
+         </h6>
+        </strong></a>
       </div>
       <ul class="navbar-nav ms-auto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -36,7 +38,6 @@
               Cluster Analysis
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="question_imp.html">Question Impact</a></li>
                 <li><a class="dropdown-item" href="silhoutte_score.html">Silhoutte Score</a></li>
                 <li><a class="dropdown-item" href="std_clusters.html">Standard Deviation</a></li>
@@ -61,11 +62,62 @@
 <div class="container">
         <div class='four-squares-wrapper'>
           <div class='row'>
+            <div class="column">
+              <div class="flex-container">
+                <div class="container">
+                  <div class="child">
+                    <div class='tableauPlaceholder' id='viz1645152473794' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Question_Visualization&#47;StandardDeviationAmongClusters' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1645152473794');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>                  </div>
+          </div>
+          </div>
+            </div>
+            </div>
+            <div class='row'>
+              <div class="column">
+                <div class="flex-container">
+                <div class="container">
+                  <div class="child">
+                    <h3><br><br>Impact of Questions</h3>
+                    <h4>We wanted to determine which of the fifty questions in our data set were most relevant to the clusters discovered in our analysis. Unfortunately, how to determine feature weights in a K-means analysis is an area of ongoing research, without a simple standard solution. We devised two methods to get a sense of the impact of individual questions on our clusters.</h4>
+                    <h4>In the figure, we compare the amount of variation between the five clusters' mean responses to each question, measured using standard deviation. Color-coding on the questions reveals that there's little difference between the clusters in questions related to Openness, Conscientiousness, or Agreeableness, but considerably more for questions related to Extraversion and Neuroticism.</h4><br>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          <div class='row'>
             <div class='column'>
               <div class="flex-container">
                 <div class="container">
                   <div class="child">
-                    <div class='tableauPlaceholder' id='viz1645109904717' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Age_BoxPlot&#47;BoxPlot' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1645109904717');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='tableauPlaceholder' id='viz1645152191320' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Question_Visualization&#47;QuestionImpact-5Clusters' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1645152191320');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                  </div>
+            </div>
+            </div>
+            </div>
+            <div class='column'>
+              <div class="flex-container">
+                <div class="container">
+                  <div class="child">
+                    <h3><br><br>Silhouette Analysis</h3>
+                    <h4>One measure of effective K-means clustering is silhouette analysis. Silhoutte analysis gives a measure of how separate and distinct clusters are. High silhoutte scores, close to 1.00, indicate highly distinct clusters. Lower scores indicate clusters with signifciant overlap. Our initial silhouette score was about <strong>0.06</strong></h4>
+                    <h4>Our next method of measuring question relevance was to omit each question in turn and re-run our silhouette analysis. If the silhouette score increased when a question was omitted, that indicates the question is unhelpful in determining our clusters. If the silhouette score decreased when the question was omitted, that indicates the question is helpful.</h4>
+                    <h4>While the specific order differs, this figure once again indicates that questions related to Extraversion and Neuroticism are the most important to our model, while questions related to Openness, Agreeableness, and Conscientiousness tend to muddy the clusters.</h4>
+                    <h4>The figure also shows our base silhouette score as a threshold for determining which questions are useful and should be retained and which may be better to remove. This potentially allows us to perform feature selection, with increasing our model's silhouette score as our primary criterion for selection. Because only one question of fifty is being removed at a time, the differences are small, but they may add up.</h4><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='column'>
+              <div class="flex-container">
+                <div class="container">
+                  <div class="child">
+                    <h3><br><br>Feature Selection</h3>
+                    <h4>By using the question-by-question analysis above, we can reduce our list of features to only those questions that our analysis deems useful. Redoing our K-means analysis with the reduced question set should increase our silhouette score.</h4>
+                    <h4>We can also use this methodology for other K values, producing different numbers of clusters, to ensure that our number of clusters is still valid with different question sets.</h4>
+                    <h4>The figure shows the results of running a silhouette analysis on the full question set and a reduced question set for several different values of K. We can see that reducing the question set significantly increases the silhouette scores for K values of 3, 4, and 5, after which there's a significant drop-off. This is an indication that 5 clusters (highlighted in red) remains an effective number for analysis, and the reduced question set could provide sharper, more distinct clusters.</h4>
+                    <h4>However, the soemwhat more well-defined clusters do come at a cost. All questions related to Openness and Agreeableness, as well as most related to Conscientiousness, are lost in this process, reducing the descriptive power of the data.</h4><br>
                   </div>
                 </div>
               </div>
@@ -74,14 +126,9 @@
               <div class="flex-container">
                 <div class="container">
                   <div class="child">
-                    <h3><br><br>Impact of Questions</h3>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                      diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
-                      augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent
-                      per conubia nostra, per inceptos himenaeos.</h4><br>
-                  </div>
-                </div>
-              </div>
+                    <div class='tableauPlaceholder' id='viz1645152549295' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Question_Visualization&#47;SilhoutteScoreComparison' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1645152549295');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>                  </div>
+            </div>
+            </div>
             </div>
           </div>
 
