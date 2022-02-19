@@ -62,7 +62,7 @@ Our data is pulled from a dataset of Five Factor test responses found on [Kaggle
 
 
 ### <a name="clusters"></a>**Cluster Analysis**
-We used Python and [scikit-learn](https://scikit-learn.org/stable/)'s K-means tool to perform our clustering analysis. We determined our number of clusters using [Yellowbrick](https://www.scikit-yb.org/en/latest/)'s elbow visualizization tool for K-means. Scikit-learn and Yellowbrick were also used for our silhouette scoring.
+We used Python and [scikit-learn](https://scikit-learn.org/stable/)'s K-means tool to perform our clustering analysis. We determined our number of clusters using [Yellowbrick](https://www.scikit-yb.org/en/latest/)'s elbow visualization tool for K-means. Scikit-learn and Yellowbrick were also used for our silhouette scoring.
 
 ### <a name="question"></a>**Question analysis**
 
