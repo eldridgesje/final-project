@@ -94,7 +94,16 @@ body {
     text-align: left;
   }
 
+  p {
+    color: rgb(245, 248, 248);    
+  }
 
+  li {
+    color: rgb(245, 248, 248);    
+  }
+  a {
+    color:rgb(0, 0, 138)
+  }
 
 Two Column Flex Layout
 .flex-container {
