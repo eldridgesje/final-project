@@ -36,9 +36,9 @@ body {
     padding: 10px 0;
     margin: 0;
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
-    color: rgb(15, 145, 206);
+    color: rgb(126, 206, 243);
     text-align: left;
   }
 
@@ -69,7 +69,7 @@ body {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(19, 5, 100);
+    color: rgb(249, 248, 252);
     text-align: left;
   }
 
@@ -78,18 +78,19 @@ body {
     margin: 0;
     margin-bottom: 0px;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 800;
     color: rgb(230, 42, 42);
     text-align: left;
   }
 
+
   em {
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin: 0;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold;
-    color: rgb(251, 251, 253);
+    color: rgb(253, 251, 251);
     text-align: left;
   }
 
@@ -153,4 +154,16 @@ Two Column Flex Layout
   height: 100px;
 }
 
+
+#frame-border {
+  width: 500px;
+  padding: 15px;
+  margin: 5px;
+  border-width:7px;
+  border-color:rgb(208, 205, 219);
+  border-top-style:double;
+  border-right-style: double;
+  border-bottom-style: double; 
+  border-left-style:double}
+}
 

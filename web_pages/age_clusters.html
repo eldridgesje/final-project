@@ -65,6 +65,7 @@
               <div class="flex-container">
                 <div class="container">
                   <div class="child">
+                    <h2><br><br><br></h2>
                     <div class='tableauPlaceholder' id='viz1645129763185' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='5_Factor_Personality_Age_BoxPlot&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1645129763185');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                   </div>
                 </div>
@@ -74,13 +75,32 @@
               <div class="flex-container">
                 <div class="container">
                   <div class="child">
-                    <h3><br><br>Varience Of Age Over The Clusters</h3>
-                    <h4>Gender: F_onewayResult(statistic=0.6448648451760798, pvalue=0.6304728269288707) Age:
-                      F_onewayResult(statistic=0.6966939336711809, pvalue=0.5941272423838659) <br>Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                      diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
-                      augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent
-                      per conubia nostra, per inceptos himenaeos.</h4><br>
+                    <h2><br><br>Feature Varience Over The Clusters</h2>
+                    <h5>
+                        <div class="container">
+                          <h4>
+                            <p>Several demographic features were considered with respect to how their data might have varied over the five data
+                              clusters. &nbsp&nbspThe demographic features tested included gender, age, race, and left/right handedness.&nbsp&nbsp For
+                              each of these features’ hypothesis testing was completed.<br><br>
+                            
+                              While the specific ANOVA numbers varied, the overall results on all demographic features were like those demonstrated
+                              by the "Age" boxplot to the left.&nbsp Means and data dispersions were very similar across the clusters. &nbsp&nbspANOVA tests all
+                              revealed high pvalue scores. &nbsp So, in all cases of demographic data the Null Hypothesis failed because all pvalues where
+                              significantly higher than .05.
+                            </p>
+                            <h3>Hypothesis Testing</h3>
+                            <div id="frame-border">
+                              <h4><ul>
+                                <li>Gender:&nbsp&nbsppvalue&nbsp = &nbsp0.6304</li>
+                                <li>Age:&nbsp&nbsp pvalue&nbsp = &nbsp0.5941</li>
+                                <li>Race:&nbsp&nbsp pvalue&nbsp=&nbsp0.4508</li> 
+                                <li>Handedness:&nbsp&nbsp pvalue&nbsp=&nbsp0.8865</li>                       
+                              </ul> <br>
+                                <p> <u>Null Hypothesis (H0):</u> &nbspClusters are NOT similar across features such as gender, age, handedness, or native english speaking.<br><br><u>Conclusion:</u> We
+                                fail to reject H0 because p values are all >>.05.&nbsp&nbsp Features ARE similar across all clusters. </p></h4>
+                            </div>
+                          </h4>
+                        </div>
                   </div>
                 </div>
               </div>
