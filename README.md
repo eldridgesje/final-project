@@ -47,31 +47,46 @@ It's important to note that each of these factors is a scale, often scored from 
 
 ### <a name="cluster"></a>**Cluster analysis**
 
-[Cluster analysis](https://www.qualtrics.com/experience-management/research/cluster-analysis/) is the task of grouping items in a data set such that items in each group are more similar to each other than they are to the items in the other groups. There are a variety of statistical methods to perform these groupings, but the one most relevant to our work is **k-means analysis**.
+[Cluster analysis](https://www.qualtrics.com/experience-management/research/cluster-analysis/) is the task of grouping items in a data set such that items in each group are more similar to each other than they are to the items in the other groups. There are a variety of statistical methods to perform these groupings, but the one most relevant to our work is **K-means analysis**.
+
+K-means involves selecting a number of random points within a data set and assigning each record to the nearest point. The mean of each subsequent cluster is found, and then each point is reassigned to the new cluster mean. This is repeated until equilibrium is reached.
+
+K-means is an unsupervised machine learning technique, meaning that the clusters that result -- if the data does indeed cluster -- are discovered rather than pre-determined.
 
 
 
 <br>
 
-## <a name="background"></a>Methods
+## <a name="methods"></a>Methods
+Our data is pulled from a dataset of Five Factor test responses found on [Kaggle](https://www.kaggle.com/lucasgreenwell/ocean-five-factor-personality-test-responses). We used Python to clean and standardize the data before performing our analysis.  
 
 
 ### <a name="clusters"></a>**Cluster Analysis**
+We used Python and [scikit-learn](https://scikit-learn.org/stable/)'s K-means tool to perform our clustering analysis. We determined our number of clusters using [Yellowbrick](https://www.scikit-yb.org/en/latest/)'s elbow visualizization tool for K-means. Scikit-learn and Yellowbrick were also used for our silhouette scoring.
 
 ### <a name="question"></a>**Question analysis**
 
-### <a name="demographics"></a>**Demographic analysis**
+We wanted to determine which of the fifty questions in our data set were most relevant to the clusters discovered in our analysis. Unfortunately, how to determine feature weights in a K-means analysis is an area of ongoing research, without a simple standard solution. We devised two methods to get a sense of the impact of individual questions on our clusters.  
 
+First, we compared the amount of variation between the five clusters' mean responses to each question, measured using standard deviation.  
+
+Second, we omitted each question in turn and re-ran our silhouette analysis. If the silhouette score increased when a question was omitted, we took that to indicate that the question was unhelpful in determining our clusters. If the silhouette score decreased when the question was omitted, we took that to indicate that the question was helpful.
+
+### <a name="demographics"></a>**Demographic analysis**
+Our data sources contained information on participants' country, age, gender, handedness, and race, as well as whether English was their native language or not. Once each response was assigned to a cluster, we performed ANOVA testing to determine if there were statistically significant differences between groups.
 
 
 
 <br>
 
 ## <a name="results"></a>Results
-
-
-
+Our elbow analysis indicated that our data best clustered into perhaps five groups. However, our silhouette analysis of the clusters revealed only weak separation between them, indicating the clustering was quite weak.  
+Our analysis of the questions revealed that certain questions were significantly more helpful for clustering than others. However, the clusters remained fairly weakly differentiated.  
+Demographic analysis indicated little difference in personality clusters among different populations. We found no statistically significant difference in mean age by cluster, gender by cluster, or left-handedness by cluster.
 
 <br>
 
 ## <a name="conclusions"></a>Conclusion
+The Five Factors are a scale, not categories. They don’t divide people neatly into groups, but present a spectrum. Our analysis of people’s responses similarly showed little clean grouping of personality “types”.  
+
+Even after conducting analysis to find a natural number of groups and the most effective questions, clusters were fuzzy and ill-defined. We also found few statistically significant distinctions in the personalities of different populations.
